@@ -20,10 +20,6 @@ var coords = [
 	[ 615, 665]
 ];
 
-for(var i = 0; i < coords.length; i++){
-	drawText(coords[i]);
-}
-
 function multSpaceToOne(str){
 	return str.replace(/ +(?= )/g, '');
 }
@@ -46,9 +42,7 @@ function download(){
 
 function getImage(file){
 	img.src = URL.createObjectURL(file); 
-
 	setTimeout(update, 100);
-	//update();
 }
 
 function update(){
