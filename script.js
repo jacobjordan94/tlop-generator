@@ -1,13 +1,9 @@
 "use strict";
 
 var c = document.getElementById('album-cover');
-var image;
 var ctx = c.getContext('2d');
 var albumTitle = document.getElementById('album-title').value;
 var img = document.getElementById('image');
-albumTitle = multSpaceToOne(albumTitle);
-albumTitle = oneSpaceToTwo(albumTitle);
-
 var coords = [
 	[ 83,  88 ],
 	[ 87,  295],
@@ -58,7 +54,6 @@ function update(){
 
 	ctx.font = 'bold 20pt Helvetica, Arial';
 	ctx.fillStyle = '#000';
-	ctx.fillText(albumTitle, 83, 88);
 
 	ctx.drawImage(img, 0, 0, img.width, img.height, 132, 788, 236, 165);
 
