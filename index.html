@@ -18,11 +18,14 @@
 				</canvas>
 			</div>
 			<p>
-				<input type="text" value="THE LIFE OF PABLO" id="album-title"></input>
+				<input class="btn" type="text" value="THE LIFE OF PABLO" id="album-title"></input>
 			</p>
-			<p>CHOOSE IMAGE
-				<input type="file" value="Choose Image" title="asd" onchange="getImage(this.files[0])"></input><br>
-				<input type="button" value="Download" onclick="download()"></input>
+			<p>
+				<input id="change-img" type="file" value="Choose Image" title="asd" onchange="getImage(this.files[0])"></input>
+				<label id="img-label" class="btn pointer" for="change-img">Change Image</label>
+			<p/>
+			<p>
+				<input class ="btn pointer" id="download" type="button" value="Download" onclick="download()"></input>
 			</p>
 		</div>
 		<div>
